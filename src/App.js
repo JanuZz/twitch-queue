@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
+import "./App.css"
 
 function App() {
   const [people, setPeople] = useState([{ username: "JanuZz_" }]);
@@ -30,9 +31,8 @@ function App() {
         return (
           <div className="d-flex flex-row justify-content-center align-items-center">
             <p
-              className="text-center fs-2 font-weight-bold"
+              className="text-center fs-2 font-weight-bold personName"
               style={{
-                textShadow: "2px 2px 5px white",
                 color: person.color,
               }}
             >
