@@ -39,7 +39,7 @@ function App() {
 
           console.log(r + g + b);
 
-          if (r + g + b < (255 * 3) / 2) {
+          if (r + g + b > (255 * 3) / 2) {
             outlineColor = "Black";
           }
         }
