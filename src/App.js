@@ -31,7 +31,10 @@ function App() {
           <div className="d-flex flex-row justify-content-center align-items-center">
             <p
               className="text-center fs-2 font-weight-bold"
-              style={{ textShadow: "0 0 10px black", color: person.color }}
+              style={{
+                textShadow: "2px 2px 5px " + person.color,
+                color: person.color,
+              }}
             >
               {person.username}{" "}
               {person.mod ? (
