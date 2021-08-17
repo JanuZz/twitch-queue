@@ -11,6 +11,7 @@ function App() {
     const socket = io("https://shadow-generated-jodhpur.glitch.me");
     socket.on("connect", () => {
       console.log("Connected to " + socket.id);
+      setConnected(true);
     });
     socket.on("queue", (list) => {
       setPeople(list);
