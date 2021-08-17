@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import "./App.css";
 
 function App() {
-  const [people, setPeople] = useState([{ username: "JanuZz_" }]);
+  const [people, setPeople] = useState([]);
   const [connected, setConnected] = useState(false);
 
   useEffect(() => {
