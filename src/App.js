@@ -36,7 +36,7 @@ function App() {
                 color: person.color,
               }}
             >
-              {person.username}{" "}
+              <b>{person.username}</b>{" "}
               {person.mod ? (
                 <span
                   className="badge shadow"
