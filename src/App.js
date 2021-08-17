@@ -27,7 +27,7 @@ function App() {
         <p className="text-center fs-3 text-white">Queue</p>
       </div>
       {people.map((person, i) => {
-        let outlineColor = "Black";
+        let outlineColor = "White";
 
         var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(
           person.color
@@ -39,8 +39,8 @@ function App() {
 
           console.log(r + g + b);
 
-          if (r + g + b > (255 * 3) / 2) {
-            outlineColor = "White";
+          if (r + g + b < (255 * 3) / 2) {
+            outlineColor = "Black";
           }
         }
 
