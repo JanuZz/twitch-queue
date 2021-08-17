@@ -37,6 +37,8 @@ function App() {
           var g = parseInt(result[2], 16);
           var b = parseInt(result[3], 16);
 
+          console.log(r + g + b);
+
           if (r + g + b > (255 * 3) / 2) {
             outlineColor = "White";
           }
