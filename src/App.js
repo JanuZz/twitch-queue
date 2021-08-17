@@ -47,8 +47,8 @@ function App() {
               ) : (
                 ""
               )}
+              <p className="text-center text-white fs-3">{person.ign}</p>
             </p>
-            <p className="text-center text-muted fs-4">{person.ign}</p>
           </div>
         );
       })}
