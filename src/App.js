@@ -32,7 +32,7 @@ function App() {
             <p
               className="text-center fs-2 font-weight-bold"
               style={{
-                textShadow: "2px 2px 5px " + person.color,
+                textShadow: "2px 2px 5px white",
                 color: person.color,
               }}
             >
