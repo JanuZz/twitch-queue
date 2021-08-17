@@ -26,13 +26,9 @@ function App() {
   return (
     <>
       <div className="bg-dark rounded p-2 fw-bolder lh-base shadow m-2">
-        {connected ? (
-          <p className="text-center fs-2 text-white">Queue</p>
-        ) : (
-          <div class="spinner-border" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-        )}
+        <p className="text-center fs-2 text-white">
+          {connected ? "Queue" : "Connecting..."}
+        </p>
       </div>
       {people.map((person, i) => {
         let outlineColor = "White";
