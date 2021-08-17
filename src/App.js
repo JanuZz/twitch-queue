@@ -4,6 +4,7 @@ import "./App.css";
 
 function App() {
   const [people, setPeople] = useState([{ username: "JanuZz_" }]);
+  const [connected, setConnected] = useState(false);
 
   useEffect(() => {
     console.log("Connecting to server...");
@@ -24,7 +25,13 @@ function App() {
   return (
     <>
       <div className="bg-dark rounded p-2 fw-bolder lh-base shadow m-2">
-        <p className="text-center fs-2 text-white">Queue</p>
+        {connected ? (
+          <p className="text-center fs-2 text-white">Queue</p>
+        ) : (
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        )}
       </div>
       {people.map((person, i) => {
         let outlineColor = "White";
