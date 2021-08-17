@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <div className="bg-dark rounded p-2 fw-bolder lh-base shadow m-2">
-        <p className="text-center fs-2 text-white">Queue</p>
+        <p className="text-center fs-3 text-white">Queue</p>
       </div>
       {people.map((person, i) => {
         console.log(person.mod);
