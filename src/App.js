@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
-import "./App.css"
+import "./App.css";
 
 function App() {
   const [people, setPeople] = useState([{ username: "JanuZz_" }]);
@@ -47,8 +47,8 @@ function App() {
               ) : (
                 ""
               )}
-              <p className="text-center text-muted fs-4">{person.ign}</p>
             </p>
+            <p className="text-center text-muted fs-4">{person.ign}</p>
           </div>
         );
       })}
