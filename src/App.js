@@ -33,7 +33,7 @@ function App() {
       {people.map((person, i) => {
         return (
           <div className="d-flex flex-row justify-content-center align-items-center">
-            <div className="d-flex flex-column justify-content-center">
+            <div className="d-flex flex-column justify-content-center align-items-center">
               {person.mod ? (
                 <span
                   className="badge shadow"
