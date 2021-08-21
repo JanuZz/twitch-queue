@@ -55,7 +55,7 @@ function App() {
               >
                 <b>{person.username}</b>
               </p>
-              <p className="text-center ont-weight-light text-white fs-3 personName">
+              <p className="text-center ont-weight-light text-muted fs-3 personName">
                 {person.ign}
               </p>
             </div>
