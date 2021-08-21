@@ -29,7 +29,7 @@ function App() {
         <p className="text-center fs-2 text-white">
           {connected ? "Queue" : "Connecting..."}
         </p>
-        <p className="text-center fs-4 text-white font-weight-light">
+        <p className="text-center fs-4 text-muted font-weight-light">
           Total: {people.length.toFixed(0)}
         </p>
       </div>
@@ -48,7 +48,7 @@ function App() {
                 <></>
               )}
               <p
-                className="fs-2 font-weight-bold px-3"
+                className="fs-2 font-weight-bold px-3 personName"
                 style={{
                   color: person.color,
                 }}
