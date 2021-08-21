@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <div className="bg-dark rounded p-2 fw-bolder lh-base shadow m-2">
-        <p className="text-center fs-2 text-white">
+        <p className="text-center fs-5 text-white">
           {connected ? "Queue" : "Connecting..."}
         </p>
         <p className="text-center fs-4 text-muted font-weight-light">
