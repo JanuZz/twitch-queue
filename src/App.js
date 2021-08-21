@@ -29,6 +29,9 @@ function App() {
         <p className="text-center fs-2 text-white">
           {connected ? "Queue" : "Connecting..."}
         </p>
+        <p className="ext-center fs-4 text-white">
+          total: {people.length.toFixed(0)}
+        </p>
       </div>
       <div className="d-flex flex-column justify-content-start align-items-center">
         {people.map((person, i) => {
