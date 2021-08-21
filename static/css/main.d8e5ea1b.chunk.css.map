@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,YACE,wBACF","file":"main.d8e5ea1b.chunk.css","sourcesContent":[".personName {\n  text-shadow: 0 0 5px black;\n}\n\n"]}
