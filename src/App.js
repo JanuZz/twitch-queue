@@ -36,10 +36,10 @@ function App() {
       <div className="d-flex flex-column justify-content-start align-items-center">
         {people.map((person, i) => {
           return (
-            <div className="d-flex flex-row align-items-center boxShadow">
+            <div className="d-flex flex-row align-items-center">
               {person.mod ? (
                 <span
-                  className="badge shadow"
+                  className="badge shadow boxShadow"
                   style={{ backgroundColor: "#ff0000" }}
                 >
                   MOD
