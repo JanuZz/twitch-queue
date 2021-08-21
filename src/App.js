@@ -39,7 +39,7 @@ function App() {
             <div className="d-flex flex-row align-items-center">
               {person.mod ? (
                 <span
-                  className="badge shadow boxShadow"
+                  className="badge shadow"
                   style={{ backgroundColor: "#ff0000" }}
                 >
                   MOD
@@ -55,7 +55,7 @@ function App() {
               >
                 <b>{person.username}</b>
               </p>
-              <p className="text-center ont-weight-light text-muted fs-3 textShadow">
+              <p className="text-center ont-weight-light text-white fs-3 textShadow">
                 {person.ign}
               </p>
             </div>
