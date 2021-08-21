@@ -30,31 +30,33 @@ function App() {
           {connected ? "Queue" : "Connecting..."}
         </p>
       </div>
-      {people.map((person, i) => {
-        return (
-          <div className="d-flex flex-column justify-content-center align-items-center">
-            {person.mod ? (
-              <span
-                className="badge shadow"
-                style={{ backgroundColor: "#ff0000" }}
+      <div className="d-flex flex-column justify-content-start align-items-center">
+        {people.map((person, i) => {
+          return (
+            <div className="d-flex flex-row align-items-center">
+              {person.mod ? (
+                <span
+                  className="badge shadow"
+                  style={{ backgroundColor: "#ff0000" }}
+                >
+                  MOD
+                </span>
+              ) : (
+                <></>
+              )}
+              <p
+                className="fs-2 font-weight-bold px-3"
+                style={{
+                  color: person.color,
+                }}
               >
-                MOD
-              </span>
-            ) : (
-              <></>
-            )}
-            <p
-              className={"fs-2 font-weight-bold personName"}
-              style={{
-                color: person.color,
-              }}
-            >
-              <b>{person.username}</b>
-            </p>
-            <p className="text-center text-white fs-3">{person.ign}</p>
-          </div>
-        );
-      })}
+                <b>{person.username}</b>
+              </p>
+              <p className="text-center text-white fs-3">{person.ign}</p>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }
