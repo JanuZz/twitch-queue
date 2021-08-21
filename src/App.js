@@ -36,7 +36,7 @@ function App() {
       <div className="d-flex flex-column justify-content-start align-items-center">
         {people.map((person, i) => {
           return (
-            <div className="d-flex flex-row align-items-center">
+            <div className="d-flex flex-row align-items-center boxShadow">
               {person.mod ? (
                 <span
                   className="badge shadow"
@@ -48,14 +48,14 @@ function App() {
                 <></>
               )}
               <p
-                className="fs-2 font-weight-bold px-3 personName"
+                className="fs-2 font-weight-bold px-3 textShadow"
                 style={{
                   color: person.color,
                 }}
               >
                 <b>{person.username}</b>
               </p>
-              <p className="text-center ont-weight-light text-muted fs-3 personName">
+              <p className="text-center ont-weight-light text-muted fs-3 textShadow">
                 {person.ign}
               </p>
             </div>
