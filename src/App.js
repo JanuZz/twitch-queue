@@ -26,10 +26,10 @@ function App() {
   return (
     <>
       <div className="bg-dark rounded p-2 fw-bolder lh-base shadow m-2">
-        <p className="text-center fs-3 text-white">
+        <p className="text-center fs-3 text-white mb-0">
           {connected ? "Queue" : "Connecting..."}
         </p>
-        <p className="text-center fs-6 text-muted font-weight-light">
+        <p className="text-center fs-6 text-muted font-weight-light mb-0">
           Total: {people.length.toFixed(0)}
         </p>
       </div>
