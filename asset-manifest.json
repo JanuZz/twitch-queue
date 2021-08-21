@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/twitch-queue/static/css/main.d8e5ea1b.chunk.css",
-    "main.js": "/twitch-queue/static/js/main.5974dfc2.chunk.js",
-    "main.js.map": "/twitch-queue/static/js/main.5974dfc2.chunk.js.map",
+    "main.js": "/twitch-queue/static/js/main.7730b599.chunk.js",
+    "main.js.map": "/twitch-queue/static/js/main.7730b599.chunk.js.map",
     "runtime-main.js": "/twitch-queue/static/js/runtime-main.c5993a5f.js",
     "runtime-main.js.map": "/twitch-queue/static/js/runtime-main.c5993a5f.js.map",
     "static/css/2.c490997a.chunk.css": "/twitch-queue/static/css/2.c490997a.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.c490997a.chunk.css",
     "static/js/2.099895fa.chunk.js",
     "static/css/main.d8e5ea1b.chunk.css",
-    "static/js/main.5974dfc2.chunk.js"
+    "static/js/main.7730b599.chunk.js"
   ]
 }
