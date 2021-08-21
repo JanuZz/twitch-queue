@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,YACE,kEACF","file":"main.6992b7c5.chunk.css","sourcesContent":[".textShadow {\n  text-shadow: 0 0 5px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;\n}\n"]}
