@@ -50,7 +50,7 @@ function App() {
               <p
                 className="fs-2 font-weight-bold px-3 textShadow"
                 style={{
-                  color: person.color,
+                  color: person.color ? person.color : "#ffffff",
                 }}
               >
                 <b>{person.username}</b>
