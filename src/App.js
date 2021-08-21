@@ -32,28 +32,26 @@ function App() {
       </div>
       {people.map((person, i) => {
         return (
-          <div className="d-flex flex-row justify-content-center align-items-center">
-            <div className="d-flex flex-column justify-content-center align-items-center">
-              {person.mod ? (
-                <span
-                  className="badge shadow"
-                  style={{ backgroundColor: "#ff0000" }}
-                >
-                  MOD
-                </span>
-              ) : (
-                <></>
-              )}
-              <p
-                className={"fs-2 font-weight-bold personName"}
-                style={{
-                  color: person.color,
-                }}
+          <div className="d-flex flex-column justify-content-center align-items-center">
+            {person.mod ? (
+              <span
+                className="badge shadow"
+                style={{ backgroundColor: "#ff0000" }}
               >
-                <b>{person.username}</b>
-              </p>
-              <p className="text-center text-white fs-3">{person.ign}</p>
-            </div>
+                MOD
+              </span>
+            ) : (
+              <></>
+            )}
+            <p
+              className={"fs-2 font-weight-bold personName"}
+              style={{
+                color: person.color,
+              }}
+            >
+              <b>{person.username}</b>
+            </p>
+            <p className="text-center text-white fs-3">{person.ign}</p>
           </div>
         );
       })}
