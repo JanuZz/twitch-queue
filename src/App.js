@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router";
 import { io } from "socket.io-client";
 import "./App.css";
 
 function App() {
   const [people, setPeople] = useState([]);
   const [connected, setConnected] = useState(false);
+
+  const { color } = useParams()
+  console.log("Color: " + (color))
 
   useEffect(() => {
     console.log("Connecting to server...");
@@ -25,7 +29,12 @@ function App() {
 
   return (
     <>
-      <div className="bg-dark rounded p-2 fw-bolder lh-base shadow m-2">
+      <div
+        className="rounded p-2 fw-bolder lh-base shadow m-2"
+        style={{
+          backgroundColor: color ? "#" + color : "#fb00ff",
+        }}
+      >
         <p className="text-center fs-3 text-white mb-0">
           {connected ? "Queue" : "Connecting..."}
         </p>
